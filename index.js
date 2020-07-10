@@ -11,7 +11,7 @@ const showReposButton = document.getElementById('show-repos');
 
 const githubApi = new GithubApi();
 
-const fillUserInfo = function(data) {
+const fillUserInfo = (data) => {
 	if (data.name) {
 		userName.innerHTML = `Name: ${data.name}`;
 	}
@@ -23,7 +23,7 @@ const fillUserInfo = function(data) {
 	}
 }
 
-const fillUserRepos = function(data) {
+const fillUserRepos = (data) => {
 	data.forEach(item => {
 		let listItem = document.createElement('li');
 		let listItemLink = document.createElement('a');
@@ -37,7 +37,7 @@ const fillUserRepos = function(data) {
 	});
 }
 
-const formSubmitHandler = function(evt) {
+const formSubmitHandler = (evt) => {
 	evt.preventDefault();
 
 	const userName = input.value;
@@ -46,7 +46,7 @@ const formSubmitHandler = function(evt) {
 		.then(data => fillUserInfo(data));
 };
 
-const onButtonClickHandler = function() {
+const onButtonClickHandler = () => {
 	const userName = input.value;
 
 	githubApi.getUserRepos(userName)
