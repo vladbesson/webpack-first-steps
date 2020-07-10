@@ -1,4 +1,5 @@
 import { GithubApi } from './js/GithubApi.js';
+import "./pages/index.css";
 
 const userName = document.getElementById('user-name');
 const userCompany = document.getElementById('user-company');
