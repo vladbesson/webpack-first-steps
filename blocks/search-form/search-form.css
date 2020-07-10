@@ -1,0 +1,21 @@
+.search-form {
+  padding-bottom: 40px;
+}
+
+.search-form__form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form__input {
+  margin-right: 10px;
+}
+
+.search-form__input input {
+  height: 37px;
+  line-height: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 5px;
+}

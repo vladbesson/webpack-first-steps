@@ -1,0 +1,16 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/hero-section/hero-section.css);
+@import url(../blocks/search-form/search-form.css);
+@import url(../blocks/search-results/search-results.css);
+
+body {
+  background-color: beige;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
